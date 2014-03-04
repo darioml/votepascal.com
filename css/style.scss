@@ -13,7 +13,12 @@ header {
 
 #background {
 	//background: url('http://1.bp.blogspot.com/_NdssK-xlQPI/TTYIdejOV0I/AAAAAAAAHa0/ZZ9T5AOcIb8/s1600/useIMG_6299.JPG') center center;
-	background: #eee;
+	//background: #2F9AE6;
+	background: url('../img/rawblue.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	position: absolute;
 	width: 100%;
 	z-index: -1;
@@ -34,14 +39,18 @@ header {
 
 #face {
 	text-align: center;
+		height: 100%;
 	.wrapper {
 		color: #eee;
 		width: 100%;
+		height: 100%;
+		float: right;
 		max-width: 450px;
-		margin: auto auto;
+		background: #2F9AE6;
+
 		.top, .bottom {
 			padding: 10px;
-			background: #2F9AE6;
+			color: #fff;
 			width: 100%;
 			//box-shadow: 0 0 8px 1px #888;
 			font-size: 40px;

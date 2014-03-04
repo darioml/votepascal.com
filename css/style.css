@@ -11,7 +11,11 @@ header {
   min-height: 600px; }
 
 #background {
-  background: #eee;
+  background: url("../img/rawblue.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   position: absolute;
   width: 100%;
   z-index: -1;
@@ -28,15 +32,18 @@ header {
   height: 50px; }
 
 #face {
-  text-align: center; }
+  text-align: center;
+  height: 100%; }
   #face .wrapper {
     color: #eee;
     width: 100%;
+    height: 100%;
+    float: right;
     max-width: 450px;
-    margin: auto auto; }
+    background: #2F9AE6; }
     #face .wrapper .top, #face .wrapper .bottom {
       padding: 10px;
-      background: #2F9AE6;
+      color: #fff;
       width: 100%;
       font-size: 40px;
       font-weight: 100; }
