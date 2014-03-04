@@ -12,49 +12,138 @@ header {
 }
 
 #background {
-	background: url('http://1.bp.blogspot.com/_NdssK-xlQPI/TTYIdejOV0I/AAAAAAAAHa0/ZZ9T5AOcIb8/s1600/useIMG_6299.JPG') center center;
+	//background: url('http://1.bp.blogspot.com/_NdssK-xlQPI/TTYIdejOV0I/AAAAAAAAHa0/ZZ9T5AOcIb8/s1600/useIMG_6299.JPG') center center;
+	//background: #2F9AE6;
+	background: url('../img/rawblue.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	position: absolute;
 	width: 100%;
-	z-index: -999;
+	z-index: -1;
 	height: 100%;
 	min-height: 600px;
 	filter: blur(1spx);
-	-webkit-filter: blur(1px);
-	-moz-filter: blur(1px);
-	-o-filter: blur(1px);
-	-ms-filter: blur(1px);
+	box-shadow: 0 0 5px 1px #000;
+}
 
+
+#union {
+	background: url('http://1.bp.blogspot.com/_NdssK-xlQPI/TTYIdejOV0I/AAAAAAAAHa0/ZZ9T5AOcIb8/s1600/useIMG_6299.JPG');
+	position: absolute;
+	width: 100%;
+	z-index: -8;
+	height: 50px;
 }
 
 #face {
 	text-align: center;
-	padding-top: 150px;
+		height: 100%;
 	.wrapper {
-		position: relative;
-		width: 300px;
-		margin: auto auto;
-		.background {
-			position: absolute;
-			z-index: -1;
-			top: 150px;
-			padding-top: 150px;
-			padding-bottom: 20px;
-			background: rgba(255,255,255,.6);
+		color: #eee;
+		width: 100%;
+		height: 100%;
+		float: right;
+		max-width: 450px;
+		background: #2F9AE6;
+
+		.top, .bottom {
+			padding: 10px;
+			color: #fff;
 			width: 100%;
-			margin: auto auto;
-			box-shadow: 0 0 8px 1px #888;
+			//box-shadow: 0 0 8px 1px #888;
+			font-size: 40px;
+			font-weight: 100;
+		}
+		.bottom {
+			font-size: 25px;
+			font-weight: 100;
 		}
 		img {
-			width: 100%;
+			margin: 10px 0;
+			width: 80%;
 			border-radius: 100%;
-			border: 2px solid #ccc;
-			border-radius: 100%;
-		}
-		.name {
-			font-size: 45px;
+			border: 1px solid #fff;
 		}
 		.subname {
 			font-size: 20px;
 		}
 	}
 }
+
+#manifesto {
+	padding-top: 50px;
+	width: 100%;
+	max-width: 1200px;
+	margin: auto auto;
+	.featurette {
+		.featurette-heading {
+			.text-muted {
+				color: #2F9AE6;
+			}
+			margin-top: 100px;
+		}
+	}
+	.featurette-br {
+		border-bottom: thin solid #ccc;
+		width: 90%;
+		margin: 50px auto;
+		height: 20px;
+	}
+	padding-bottom: 50px;
+}
+
+#vote-now {
+	height: 100%;
+	background: #333;
+	position: relative;
+	line-height: 100%;
+
+	.wrapper {
+		padding-top: 50px;
+		.voting-time {
+			color: #333;
+			text-align: center;
+			font-size: 40px;
+			background: #2F9AE6;
+			padding: 20px;
+			max-width: 700px;
+			margin: auto auto;
+		}
+	}
+	.centerme {
+		display: table;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		.image {
+		    display: table-cell;
+		    vertical-align: middle;
+			width: 100%;
+			margin: auto auto;
+			text-align: center;
+			img {
+				max-width: 100%;
+				max-width: 800px;
+				margin-bottom: 100px;
+			}
+		}
+	}
+}
+
+
+@media only screen and (min-width: 561px) {
+	#face {
+		padding-top: 80px;
+		.wrapper img {
+			margin: 40px 0;
+		}
+	}
+
+}
+
+
+
+
+
