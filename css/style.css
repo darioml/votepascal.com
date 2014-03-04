@@ -70,7 +70,8 @@ header {
 #vote-now {
   height: 100%;
   background: #333;
-  position: relative; }
+  position: relative;
+  line-height: 100%; }
   #vote-now .wrapper {
     padding-top: 50px; }
     #vote-now .wrapper .voting-time {
@@ -81,13 +82,21 @@ header {
       padding: 20px;
       max-width: 700px;
       margin: auto auto; }
-  #vote-now .image {
-    width: 100%;
-    max-width: 800px;
-    margin: auto auto;
-    text-align: center; }
-    #vote-now .image img {
-      max-width: 100%; }
+  #vote-now .centerme {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+    #vote-now .centerme .image {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+      margin: auto auto;
+      text-align: center; }
+      #vote-now .centerme .image img {
+        max-width: 100%;
+        max-width: 800px;
+        margin-bottom: 100px; }
 
 @media only screen and (min-width: 561px) {
   #face {
