@@ -36,7 +36,7 @@ header {
     color: #eee;
     width: 100%;
     height: 100%;
-    background: #EEE; }
+    background: #444; }
     #face .wrapper .top, #face .wrapper .bottom {
       padding: 10px;
       color: #fff;
@@ -55,6 +55,12 @@ header {
       border: 1px solid #fff; }
     #face .wrapper .subname {
       font-size: 20px; }
+
+#about-me {
+  padding: 40px 0;
+  border-bottom: thin double #ccc;
+  width: 80%;
+  margin: auto auto; }
 
 #manifesto {
   padding: 50px 20px 0;
