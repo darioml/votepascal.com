@@ -101,7 +101,7 @@ header {
       margin: auto auto;
       text-align: center; }
       #vote-now .centerme .image img {
-        max-width: 100%;
+        width: 95%;
         max-width: 800px;
         margin-bottom: 100px; }
 
