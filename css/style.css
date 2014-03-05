@@ -50,25 +50,29 @@ header {
     #face .wrapper img {
       margin: 10px 0;
       width: 80%;
+      max-width: 380px;
       border-radius: 100%;
       border: 1px solid #fff; }
     #face .wrapper .subname {
       font-size: 20px; }
 
 #manifesto {
+  padding: 50px 20px 0;
   padding-top: 50px;
   width: 100%;
   max-width: 1200px;
   margin: auto auto;
   padding-bottom: 50px; }
+  #manifesto .col-md-4 {
+    display: none; }
   #manifesto .featurette .featurette-heading {
-    margin-top: 100px; }
+    margin-top: 20px; }
     #manifesto .featurette .featurette-heading .text-muted {
       color: #2F9AE6; }
   #manifesto .featurette-br {
     border-bottom: thin solid #ccc;
     width: 90%;
-    margin: 50px auto;
+    margin: 20px auto;
     height: 20px; }
 
 #vote-now {
@@ -102,9 +106,16 @@ header {
         max-width: 800px;
         margin-bottom: 100px; }
 
-@media only screen and (min-width: 561px) {
+@media only screen and (min-width: 768px) {
   #background {
     background: url("../img/rawblue.jpg") no-repeat center center; }
+
+  #manifesto .col-md-4 {
+    display: block; }
+  #manifesto .featurette .featurette-heading {
+    margin-top: 100px; }
+  #manifesto .featurette-br {
+    margin: 50px auto; }
 
   #face {
     display: none;

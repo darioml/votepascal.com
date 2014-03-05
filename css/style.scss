@@ -60,6 +60,7 @@ header {
 		img {
 			margin: 10px 0;
 			width: 80%;
+			max-width: 380px;
 			border-radius: 100%;
 			border: 1px solid #fff;
 		}
@@ -70,22 +71,26 @@ header {
 }
 
 #manifesto {
+	padding: 50px 20px 0;
 	padding-top: 50px;
 	width: 100%;
 	max-width: 1200px;
 	margin: auto auto;
+	.col-md-4 {
+		display: none;
+	}
 	.featurette {
 		.featurette-heading {
 			.text-muted {
 				color: #2F9AE6;
 			}
-			margin-top: 100px;
+			margin-top: 20px;
 		}
 	}
 	.featurette-br {
 		border-bottom: thin solid #ccc;
 		width: 90%;
-		margin: 50px auto;
+		margin: 20px auto;
 		height: 20px;
 	}
 	padding-bottom: 50px;
@@ -130,12 +135,24 @@ header {
 }
 
 
-@media only screen and (min-width: 561px) {
+@media only screen and (min-width: 768px) {
 
 	#background {
 		background: url('../img/rawblue.jpg') no-repeat center center;
 	}
-
+	#manifesto {
+		.col-md-4 {
+			display: block;
+		}
+		.featurette {
+			.featurette-heading {
+				margin-top: 100px;
+			}
+		}
+		.featurette-br {
+			margin: 50px auto;
+		}
+	}
 	#face {
 		display: none;
 		padding-top: 80px;
