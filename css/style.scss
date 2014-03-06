@@ -52,14 +52,14 @@ header {
 			text-align: left;
 			position: relative;
 			top: 55%;
-			padding: 10px 40px;
+			padding: 10px 20px;
 			color: #fff;
 			width: 70%;
 			left: 30%;
 			background: #2F9AE6;
 			background: rgba(47, 154, 230, 0.5);
 			//box-shadow: 0 0 8px 1px #888;
-			font-size: 35px;
+			font-size: 30px;
 		}
 		.bottom {
 			font-size: 25px;
@@ -150,6 +150,19 @@ header {
 }
 
 
+@media only screen and (min-width: 481px) {
+	#face {
+		//padding-top: 80px;
+		.wrapper {
+			background-image: url('../img/landscape.jpg');
+			.top {
+				top: 65%;
+				font-size: 40px;
+			}
+		}
+	}
+}
+
 @media only screen and (min-width: 768px) {
 
 	//#background {
@@ -177,6 +190,7 @@ header {
 				top: 40%;
 				width: 50%;
 				left: 50%;
+				font-size: 45px;
 			}
 			img {
 				margin: 40px 0;
