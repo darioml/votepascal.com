@@ -141,8 +141,14 @@ header {
 			margin: auto auto;
 			text-align: center;
 			img {
+				&.small {
+					width: 90%;
+					max-width: 600px;
+					margin-top: 0px;
+				}
 				width: 95%;
 				max-width: 800px;
+				margin-top: 70px;
 				margin-bottom: 0px;
 			}
 		}
