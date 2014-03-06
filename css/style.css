@@ -51,7 +51,7 @@ header {
       left: 30%;
       background: #2F9AE6;
       background: rgba(47, 154, 230, 0.5);
-      font-size: 45px; }
+      font-size: 40px; }
     #face .wrapper .bottom {
       font-size: 25px;
       font-weight: 100; }
@@ -118,7 +118,7 @@ header {
       #vote-now .centerme .image img {
         width: 95%;
         max-width: 800px;
-        margin-bottom: 100px; }
+        margin-bottom: 0px; }
 
 @media only screen and (min-width: 768px) {
   #manifesto .col-md-4 {
