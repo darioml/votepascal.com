@@ -44,14 +44,14 @@ header {
     #face .wrapper .top, #face .wrapper .bottom {
       text-align: left;
       position: relative;
-      top: 65%;
+      top: 55%;
       padding: 10px 40px;
       color: #fff;
       width: 70%;
       left: 30%;
       background: #2F9AE6;
       background: rgba(47, 154, 230, 0.5);
-      font-size: 40px; }
+      font-size: 35px; }
     #face .wrapper .bottom {
       font-size: 25px;
       font-weight: 100; }
