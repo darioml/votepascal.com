@@ -44,7 +44,7 @@ header {
     #face .wrapper .top, #face .wrapper .bottom {
       text-align: left;
       position: relative;
-      top: 55%;
+      top: 65%;
       padding: 10px 20px;
       color: #fff;
       width: 70%;
@@ -124,8 +124,8 @@ header {
   #face .wrapper {
     background-image: url("../img/landscape.jpg"); }
     #face .wrapper .top {
-      top: 65%;
-      font-size: 40px; } }
+      font-size: 40px;
+      padding-left: 40px; } }
 @media only screen and (min-width: 768px) {
   #manifesto .col-md-4 {
     display: block; }
