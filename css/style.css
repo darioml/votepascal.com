@@ -36,14 +36,22 @@ header {
     color: #eee;
     width: 100%;
     height: 100%;
-    background: #444; }
+    background: url("../img/potrait.jpg") center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
     #face .wrapper .top, #face .wrapper .bottom {
-      padding: 10px;
+      text-align: left;
+      position: relative;
+      top: 65%;
+      padding: 10px 20px;
       color: #fff;
-      width: 100%;
+      width: 70%;
+      left: 30%;
       background: #2F9AE6;
-      font-size: 40px;
-      font-weight: 100; }
+      background: rgba(47, 154, 230, 0.5);
+      font-size: 30px; }
     #face .wrapper .bottom {
       font-size: 25px;
       font-weight: 100; }
@@ -110,12 +118,15 @@ header {
       #vote-now .centerme .image img {
         width: 95%;
         max-width: 800px;
-        margin-bottom: 100px; }
+        margin-bottom: 0px; }
 
+@media only screen and (min-width: 481px) {
+  #face .wrapper {
+    background-image: url("../img/landscape.jpg"); }
+    #face .wrapper .top {
+      font-size: 40px;
+      padding-left: 40px; } }
 @media only screen and (min-width: 768px) {
-  #background {
-    background: url("../img/rawblue.jpg") no-repeat center center; }
-
   #manifesto .col-md-4 {
     display: block; }
   #manifesto .featurette .featurette-heading {
@@ -123,8 +134,12 @@ header {
   #manifesto .featurette-br {
     margin: 50px auto; }
 
-  #face {
-    display: none;
-    padding-top: 80px; }
+  #face .wrapper {
+    background-image: url("../img/landscape.jpg"); }
+    #face .wrapper .top {
+      top: 40%;
+      width: 50%;
+      left: 50%;
+      font-size: 45px; }
     #face .wrapper img {
       margin: 40px 0; } }

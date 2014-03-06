@@ -42,16 +42,24 @@ header {
 		color: #eee;
 		width: 100%;
 		height: 100%;
-		background: #444;
+		background: url('../img/potrait.jpg') center center no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 
 		.top, .bottom {
-			padding: 10px;
+			text-align: left;
+			position: relative;
+			top: 65%;
+			padding: 10px 20px;
 			color: #fff;
-			width: 100%;
+			width: 70%;
+			left: 30%;
 			background: #2F9AE6;
+			background: rgba(47, 154, 230, 0.5);
 			//box-shadow: 0 0 8px 1px #888;
-			font-size: 40px;
-			font-weight: 100;
+			font-size: 30px;
 		}
 		.bottom {
 			font-size: 25px;
@@ -135,18 +143,32 @@ header {
 			img {
 				width: 95%;
 				max-width: 800px;
-				margin-bottom: 100px;
+				margin-bottom: 0px;
 			}
 		}
 	}
 }
 
 
+@media only screen and (min-width: 481px) {
+	#face {
+		//padding-top: 80px;
+		.wrapper {
+			background-image: url('../img/landscape.jpg');
+			.top {
+				font-size: 40px;
+				padding-left: 40px;
+			}
+		}
+	}
+}
+
 @media only screen and (min-width: 768px) {
 
-	#background {
-		background: url('../img/rawblue.jpg') no-repeat center center;
-	}
+	//#background {
+//		background: url('../img/landscape.jpg') no-repeat center center;
+//	}
+
 	#manifesto {
 		.col-md-4 {
 			display: block;
@@ -161,10 +183,18 @@ header {
 		}
 	}
 	#face {
-		display: none;
-		padding-top: 80px;
-		.wrapper img {
-			margin: 40px 0;
+		//padding-top: 80px;
+		.wrapper {
+			background-image: url('../img/landscape.jpg');
+			.top {
+				top: 40%;
+				width: 50%;
+				left: 50%;
+				font-size: 45px;
+			}
+			img {
+				margin: 40px 0;
+			}
 		}
 	}
 
